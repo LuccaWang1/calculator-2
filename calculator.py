@@ -1,5 +1,5 @@
 #Docstring on what this is:
-"""CLI application for a prefix-notation calculator."""
+"""CLI application for a prefix-notation calculator - complete the functions below."""
 
 #importing from other file:
 from arithmetic import (add, subtract, multiply, divide, square, cube,
@@ -57,7 +57,7 @@ while True:
     elif operator == "pow":
         result = power(float(num1), float(num2))
 
-    elif operator == "mod" or "%":
+    elif operator == "%":
         result = mod(float(num1), float(num2))
 
     elif operator == "**":
@@ -65,6 +65,10 @@ while True:
 
     elif operator == "cube" or "**3": 
         result = cube(float(num1))
+    
+    else: 
+        print("Not all the information is in the correct format.")
+        continue
 
     #we print the result to show the user the result of their equation
     #the calculator output is:
